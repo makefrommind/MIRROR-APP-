@@ -8,7 +8,7 @@ const ASSETS = ['/', '/index.html', '/icon-192-1.png', '/icon-512-1.png'];
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(CACHE).then(function(c) {
-      return c.addAll(ASSETS.filter(a => a !== '/icon-192.png' && a !== '/icon-512.png'));
+      return c.addAll(ASSETS.filter(a => a !== '/icon-192-1.png' && a !== '/icon-512-1.png'));
     }).catch(function() {}) // don't fail if icons missing yet
   );
   self.skipWaiting();
