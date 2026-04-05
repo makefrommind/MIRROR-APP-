@@ -71,8 +71,8 @@ function triggerAlarm(task) {
   // Show notification (visible even when app is backgrounded)
   self.registration.showNotification('Mirror — ' + task.title, {
     body: task.note || 'Your reminder is due now',
-    icon: '/icon-192.png',
-    badge: '/icon-192.png',
+    icon: '/icon-192-1.png',
+    badge: '/icon-192-1.png',
     tag: 'mirror-alarm-' + task.id,
     requireInteraction: true,  // stays on screen until dismissed
     vibrate: [500, 200, 500, 200, 500],
@@ -139,8 +139,8 @@ self.addEventListener('push', function(e) {
   e.waitUntil(
     self.registration.showNotification(data.title || 'Mirror Reminder', {
       body: data.body || 'You have a task due',
-      icon: '/icon-192.png',
-      badge: '/icon-192.png',
+      icon: '/icon-192-1.png',
+      badge: '/icon-192-1.png',
       tag: 'mirror-push-' + Date.now(),
       requireInteraction: true,
       vibrate: [500, 200, 500],
