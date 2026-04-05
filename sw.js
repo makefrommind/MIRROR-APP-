@@ -2,7 +2,7 @@
 // Handles background alarms, push notifications, and offline caching
 
 const CACHE = 'mirror-v1';
-const ASSETS = ['/', '/index.html', '/icon-192.png', '/icon-512.png'];
+const ASSETS = ['/', '/index.html', '/icon-192-1.png', '/icon-512-1.png'];
 
 // ── INSTALL: cache app shell ──
 self.addEventListener('install', function(e) {
